@@ -1,0 +1,3 @@
+provider "docker" {
+  # Configuration options
+}
