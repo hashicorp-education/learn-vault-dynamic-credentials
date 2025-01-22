@@ -24,7 +24,7 @@ resource "docker_container" "postgres" {
 resource "docker_container" "vault" {
   name  = "learn-vault"
   image = docker_image.vault.image_id
-  env = ["VAULT_DEV_ROOT_TOKEN_ID=root", "VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200"]
+  env = ["VAULT_DEV_ROOT_TOKEN_ID=root", "VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200", "VAULT_LICENSE=${var.VAULT_LICENSE}"]
   ports {
     internal = 8200
     external = 8200
