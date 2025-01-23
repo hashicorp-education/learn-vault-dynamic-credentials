@@ -11,5 +11,6 @@ variable "VAULT_EDITION" {
 
 variable "VAULT_LICENSE" {
     type = string
+    default = ""
     description = "Vault license environment variable must be set for Vault Enterprise"
 }
