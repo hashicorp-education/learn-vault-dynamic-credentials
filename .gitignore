@@ -36,3 +36,4 @@ override.tf.json
 .terraformrc
 terraform.rc
 vault-dynamic-creds-docker/.terraform.lock.hcl
+vault-dynamic-creds-postgres/.terraform.lock.hcl
